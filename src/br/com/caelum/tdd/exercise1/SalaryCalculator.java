@@ -1,18 +1,22 @@
 package br.com.caelum.tdd.exercise1;
 
+import static br.com.caelum.tdd.exercise1.Position.DBA;
+import static br.com.caelum.tdd.exercise1.Position.DEVELOPER;
+import static br.com.caelum.tdd.exercise1.Position.TESTER;
+
 public class SalaryCalculator {
 
 
 	public double calculate(Employee employee) {
-		if(Position.DEVELOPER.equals(employee.getPosition())) {
+		if(DEVELOPER.equals(employee.getPosition())) {
 			return tenOrTwentyPercentDiscount(employee);
 		}
 		
-		if(Position.DBA.equals(employee.getPosition())) {
+		if(DBA.equals(employee.getPosition())) {
 			return fifteenOrTwentyFivePercentDiscount(employee);
 		}
 		
-		if(Position.TESTER.equals(employee.getPosition())) {
+		if(TESTER.equals(employee.getPosition())) {
 			return fifteenOrTwentyFivePercentDiscount(employee);
 		}
 		
