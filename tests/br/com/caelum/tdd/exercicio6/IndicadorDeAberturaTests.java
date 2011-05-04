@@ -11,11 +11,12 @@ public class IndicadorDeAberturaTests {
 
 	@Test
 	public void deveRetornarOValorDeAbertura() {
-		double valor = new IndicadorDeAbertura().calcula(1, Arrays.asList(candleComAbertura(10.0), candleComAbertura(12.0), candleComAbertura(11.0)));
-		
+		double valor = new IndicadorDeAbertura().calcula(1, Arrays.asList(
+				candleComAbertura(10.0), candleComAbertura(12.0),
+				candleComAbertura(11.0)));
+
 		assertEquals(12.0, valor, 0.00001);
-		
-		
+
 	}
 
 	private Candle candleComAbertura(double abertura) {
