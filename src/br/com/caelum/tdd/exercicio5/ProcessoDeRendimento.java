@@ -7,11 +7,11 @@ public class ProcessoDeRendimento {
 
 	public static void main(String[] args) {
 
-		for(ContaComum c : contas()) {
-			c.rende();
+		for(ContaComum conta : contas()) {
+			conta.rende();
 
 			System.out.println("Novo saldo:");
-			System.out.println(c.getSaldo());
+			System.out.println(conta.getSaldo());
 		}
 	}
 

@@ -34,7 +34,6 @@ public class GeradorDeNotaFiscalTests {
 	public void deveEnviarEmailComANotaFiscal() {
 
 		Fatura fatura = new Fatura(1000, "cliente 1");
-		
 		NotaFiscal nf = gerador.gera(fatura);
 		
 		verify(email).enviaEmail(nf);

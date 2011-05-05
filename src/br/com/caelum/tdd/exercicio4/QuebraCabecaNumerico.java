@@ -5,14 +5,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class LabirintoNumerico {
+public class QuebraCabecaNumerico {
 
 	private int entrada;
 	private int saida;
 	private List<Numero> fila;
 	private Set<Integer> visitados;
 	
-	public LabirintoNumerico() {
+	public QuebraCabecaNumerico() {
 		this.fila = new ArrayList<Numero>();
 		this.visitados = new HashSet<Integer>();
 	}
@@ -71,13 +71,11 @@ public class LabirintoNumerico {
 
 	private String formataSaida(Numero solucao) {
 		String resposta = "";
-		if(solucao != null) {
 			while(solucao!=null) {
-				resposta = (solucao.getPai()!=null?",":"") + solucao.getValor() + resposta;
+				resposta = solucao.getValor() + " " + resposta;
 				solucao = solucao.getPai();
 			}
-		}		
-		return "[" + resposta + "]";
+		return resposta;
 	}
 	
 	private Numero multiplicaPorDois(Numero numero) {
