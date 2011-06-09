@@ -13,7 +13,6 @@ public class MediaMovelPonderada{
 			soma += (tipo.equals("abertura")? c.getAbertura() : c.getFechamento())*peso;
 			peso++;
 		}
-		System.out.println(soma);
 		return soma/6;
 	}
 }
