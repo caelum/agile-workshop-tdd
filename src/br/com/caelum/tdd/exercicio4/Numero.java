@@ -1,8 +1,8 @@
 package br.com.caelum.tdd.exercicio4;
 
 public class Numero {
-	private int valor;
-	private Numero pai;
+	private final int valor;
+	private final Numero pai;
 	
 	public Numero(int valor, Numero pai) {
 		this.valor = valor;
