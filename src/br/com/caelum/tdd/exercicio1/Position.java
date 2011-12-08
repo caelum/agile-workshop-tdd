@@ -1,7 +1,7 @@
 package br.com.caelum.tdd.exercicio1;
 
-public enum Cargo {
-	DESENVOLVEDOR,
+public enum Position {
+	DEVELOPER,
 	DBA,
-	TESTADOR
+	TESTER
 }
