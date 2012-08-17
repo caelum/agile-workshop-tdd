@@ -16,7 +16,7 @@ public class CalculadoraDeSalario {
 			return quinzeOuVinteCincoPorcento(funcionario);
 		}
 		
-		throw new RuntimeException("invalid employee");
+		throw new RuntimeException("funcionario invalido");
 	}
 
 	private double dezOuVintePorcento(Funcionario employee) {
