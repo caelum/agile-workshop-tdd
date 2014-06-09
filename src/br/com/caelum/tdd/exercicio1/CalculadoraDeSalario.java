@@ -19,12 +19,12 @@ public class CalculadoraDeSalario {
 		throw new RuntimeException("funcionario invalido");
 	}
 
-	private double dezOuVintePorcento(Funcionario employee) {
-		if(employee.getSalarioBase() > 3000.0) {
-			return employee.getSalarioBase() * 0.8;
+	private double dezOuVintePorcento(Funcionario funcionario) {
+		if(funcionario.getSalarioBase() > 3000.0) {
+			return funcionario.getSalarioBase() * 0.8;
 		}
 		else {
-			return employee.getSalarioBase() * 0.9;
+			return funcionario.getSalarioBase() * 0.9;
 		}
 	}
 
